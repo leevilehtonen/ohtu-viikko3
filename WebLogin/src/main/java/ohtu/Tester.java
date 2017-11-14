@@ -14,16 +14,18 @@ public class Tester {
         
         sleep(2);
         
-        WebElement element = driver.findElement(By.linkText("login"));
+        WebElement element = driver.findElement(By.linkText("register new user"));
         element.click();
 
         sleep(2);
 
         element = driver.findElement(By.name("username"));
-        element.sendKeys("pekkaaa");
+        element.sendKeys("testi");
         element = driver.findElement(By.name("password"));
-        element.sendKeys("akkep");
-        element = driver.findElement(By.name("login"));
+        element.sendKeys("itset");
+        element = driver.findElement(By.name("passwordConfrimation"));
+        element.sendKeys("itset");
+        element = driver.findElement(By.name("signup"));
         
         sleep(2);
         element.submit();
