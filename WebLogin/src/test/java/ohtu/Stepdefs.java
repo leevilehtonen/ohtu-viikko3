@@ -43,7 +43,10 @@ public class Stepdefs {
 
     @When("^correct username \"([^\"]*)\" and incorrect password \"([^\"]*)\" are given$")
     public void username_and_incorrect_password_are_given(String username, String password) throws Throwable {
-        logInWith(username, password);
+    }
+    @When("^incorrect username \"([^\"]*)\" and password \"([^\"]*)\" are given$")
+    public void incorrect_username_and_password_are_given(String username, String password) throws Throwable {
+        logInWith(username, password);        
     }
     
     @Then("^user is logged in$")
