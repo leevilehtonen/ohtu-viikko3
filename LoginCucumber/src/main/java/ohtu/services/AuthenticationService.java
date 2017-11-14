@@ -3,12 +3,18 @@ package ohtu.services;
 import ohtu.domain.User;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import ohtu.data_access.UserDao;
 
+@Component
 public class AuthenticationService {
 
     private UserDao userDao;
 
+    @Autowired
     public AuthenticationService(UserDao userDao) {
         this.userDao = userDao;
     }
