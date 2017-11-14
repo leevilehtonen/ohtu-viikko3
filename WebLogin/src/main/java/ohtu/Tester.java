@@ -26,9 +26,15 @@ public class Tester {
         element = driver.findElement(By.name("passwordConfrimation"));
         element.sendKeys("itset");
         element = driver.findElement(By.name("signup"));
-        
         sleep(2);
         element.submit();
+        element = driver.findElement(By.linkText("continue to application mainpage"));
+        sleep(2);
+        element.click();
+        element = driver.findElement(By.linkText("logout"));
+        sleep(2);
+        element.click();
+        
 
         sleep(3);
         
